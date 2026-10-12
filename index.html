@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Côn Minh Kiệu Tử 5N4Đ</title>
+<meta name="description" content="Hành trình 5 ngày 4 đêm khám phá Côn Minh, chạm tay vào tuyết Kiệu Tử, hồ Điền Trì và Gala Dinner – Tháng 2, 3/2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0e1b2b; --ink-2:#1b2d44; --snow:#f5f3ee; --paper:#fffdf9;
+  --red:#b3302a; --red-2:#8f231e; --gold:#c9a35a; --glacier:#8fb4cf;
+  --muted:#5d6b7a; --line:#e3ded3;
+  --serif:"Playfair Display",Georgia,serif; --sans:"Be Vietnam Pro",system-ui,sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html{color-scheme:light}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--snow);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--red)}
+h1,h2,h3{font-family:var(--serif);line-height:1.12;font-weight:700}
+h2{font-size:clamp(30px,4.2vw,48px)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:600;font-size:15px;transition:.25s;cursor:pointer;border:0;font-family:var(--sans)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 30px -10px rgba(179,48,42,.7)}
+.btn-red:hover{background:var(--red-2);transform:translateY(-2px)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.6);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:.3s;padding-top:env(safe-area-inset-top,0px)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:700;letter-spacing:.18em;font-size:15px}
+.brand small{font-weight:400;letter-spacing:.04em;opacity:.75;font-size:12px;border-left:1px solid rgba(255,255,255,.4);padding-left:12px}
+.nav ul{display:flex;gap:30px;list-style:none;color:#fff;font-size:14px;font-weight:500}
+.nav ul a{opacity:.85}.nav ul a:hover{opacity:1}
+.nav .btn{padding:10px 20px;font-size:14px}
+.nav.solid{background:rgba(14,27,43,.94);backdrop-filter:blur(10px);box-shadow:0 6px 24px rgba(0,0,0,.15)}
+
+/* HERO */
+.hero{position:relative;min-height:clamp(560px,88svh,860px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url(img/jiaozi1.jpg) center 40%/cover;transform:scale(1.06);animation:kb 18s ease-out forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,27,43,.55) 0%,rgba(14,27,43,.1) 35%,rgba(14,27,43,.85) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:70px;width:100%}
+.hero .eyebrow{color:var(--gold)}
+.hero h1{font-size:clamp(42px,7.4vw,96px);margin:18px 0 20px;max-width:15ch;font-weight:800}
+.hero h1 em{font-style:italic;font-weight:500;color:#dbe9f4}
+.hero p.lead{font-size:clamp(16px,1.6vw,19px);max-width:620px;opacity:.92;font-weight:300}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:56px;border-top:1px solid rgba(255,255,255,.25)}
+.facts div{padding:20px 20px 0 0}
+.facts b{display:block;font-family:var(--serif);font-size:clamp(22px,2.4vw,30px);font-weight:700}
+.facts span{font-size:13px;opacity:.75;letter-spacing:.04em}
+.snow{position:absolute;inset:0;z-index:1;pointer-events:none}
+
+/* PILLARS */
+.pillars{padding:110px 0 90px;background:var(--paper)}
+.pillars-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:56px}
+.pillars-head p{color:var(--muted);font-size:17px}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.pcard{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:3/4;color:#fff;isolation:isolate}
+.pcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s}
+.pcard:hover img{transform:scale(1.07)}
+.pcard::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 40%,rgba(14,27,43,.88))}
+.pcard .in{position:absolute;bottom:0;padding:24px}
+.pcard i{font-style:normal;font-family:var(--serif);font-size:14px;color:var(--gold)}
+.pcard h3{font-size:22px;margin:4px 0 6px}
+.pcard p{font-size:14px;opacity:.85;line-height:1.5}
+.pcard.gala{background:radial-gradient(circle at 30% 20%,#3a2a12,#120c05 70%)}
+.pcard.gala .spark{position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(2px 2px at 20% 30%,#f3d58f 50%,transparent 51%),radial-gradient(2px 2px at 70% 15%,#f3d58f 50%,transparent 51%),
+  radial-gradient(1.5px 1.5px at 45% 55%,#fff 50%,transparent 51%),radial-gradient(2px 2px at 85% 45%,#f3d58f 50%,transparent 51%),
+  radial-gradient(1.5px 1.5px at 30% 70%,#fff 50%,transparent 51%),radial-gradient(3px 3px at 60% 35%,#c9a35a 50%,transparent 51%)}
+.pcard.gala .glass{position:absolute;top:22%;left:50%;transform:translateX(-50%);font-family:var(--serif);font-size:84px;color:var(--gold);opacity:.9;font-style:italic}
+
+/* ROUTE */
+.route{background:var(--ink);color:#fff;padding:80px 0;position:relative;overflow:hidden}
+.route .eyebrow{color:var(--gold)}
+.route h2{margin:10px 0 40px}
+.track{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+.track::before{content:"";position:absolute;top:21px;left:10%;right:10%;border-top:2px dashed rgba(201,163,90,.5)}
+.stop{text-align:center;position:relative;padding:0 8px}
+.stop .dot{width:44px;height:44px;border-radius:50%;margin:0 auto 16px;display:grid;place-items:center;background:var(--ink-2);border:2px solid var(--gold);font-family:var(--serif);font-weight:700;color:var(--gold);position:relative;z-index:1}
+.stop.hi .dot{background:var(--red);border-color:var(--red);color:#fff;box-shadow:0 0 0 8px rgba(179,48,42,.2)}
+.stop b{display:block;font-size:16px}
+.stop span{font-size:13px;opacity:.65}
+.legend{margin-top:44px;display:flex;gap:28px;flex-wrap:wrap;font-size:14px;opacity:.8}
+.legend span{display:flex;align-items:center;gap:8px}
+.legend span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
+
+/* ITINERARY */
+.itin{padding:110px 0 40px}
+.itin-head{text-align:center;max-width:720px;margin:0 auto 70px}
+.itin-head p{color:var(--muted);margin-top:14px}
+.daynav{position:sticky;top:calc(74px + env(safe-area-inset-top,0px));z-index:20;background:rgba(245,243,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-bottom:60px}
+.daynav .wrap{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.daynav a{flex:0 0 auto;padding:16px 18px;font-size:14px;font-weight:600;color:var(--muted);border-bottom:2px solid transparent}
+.daynav a.on{color:var(--red);border-color:var(--red)}
+.day{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:start;margin-bottom:120px;scroll-margin-top:150px}
+.day.flip .media{order:2}
+.media{position:sticky;top:150px}
+.media .main{border-radius:20px;overflow:hidden;aspect-ratio:4/3.2;box-shadow:0 30px 60px -30px rgba(14,27,43,.45)}
+.media .main img{width:100%;height:100%;object-fit:cover}
+.media .sub{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.media .sub img{border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.media figcaption{font-size:12px;color:var(--muted);margin-top:8px}
+.dnum{font-family:var(--serif);font-size:88px;line-height:.9;color:transparent;-webkit-text-stroke:1.5px var(--red);font-weight:800}
+.day h3{font-size:clamp(26px,3vw,36px);margin:14px 0 6px}
+.tag{font-family:var(--serif);font-style:italic;color:var(--red);font-size:19px}
+.slots{margin-top:28px;border-left:2px solid var(--line);padding-left:26px}
+.slot{position:relative;padding-bottom:22px}
+.slot::before{content:"";position:absolute;left:-33px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--red)}
+.slot h4{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:4px}
+.slot p{color:#2b3a4b}
+.slot ul{margin:8px 0 0 18px;color:#2b3a4b}
+.slot ul li{margin-bottom:4px}
+.note{background:#fff6e6;border:1px solid #f0dcb4;border-radius:14px;padding:16px 18px;font-size:14px;color:#6b4f1d;margin-top:10px;display:flex;gap:12px}
+.note svg{flex:0 0 20px;margin-top:2px}
+.stay{display:inline-flex;align-items:center;gap:8px;margin-top:6px;font-weight:600;font-size:14px;background:var(--ink);color:#fff;padding:9px 16px;border-radius:999px}
+
+.opts{margin-top:8px}
+.opt-tabs{display:inline-flex;background:#ebe6db;border-radius:999px;padding:4px;margin-bottom:16px}
+.opt-tabs button{border:0;background:none;padding:9px 18px;border-radius:999px;font-family:var(--sans);font-weight:600;font-size:14px;cursor:pointer;color:var(--muted)}
+.opt-tabs button.on{background:var(--paper);color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.opt{display:none;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+.opt.on{display:block;animation:fade .35s}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}}
+.opt ul{margin-left:18px}
+.opt .plus{margin-top:12px;font-size:14px;color:#1e5a3a;background:#ecf6ef;border-radius:10px;padding:10px 14px}
+
+/* GALA */
+.gala{position:relative;background:#0c0905;color:#f3ead8;padding:120px 0;overflow:hidden}
+.gala::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 80% 0%,rgba(201,163,90,.28),transparent 55%),radial-gradient(ellipse at 0% 100%,rgba(179,48,42,.25),transparent 50%)}
+.gala .wrap{position:relative;display:grid;grid-template-columns:1fr 1.1fr;gap:70px;align-items:center}
+.gala .eyebrow{color:var(--gold)}
+.gala h2{font-size:clamp(38px,5.4vw,68px);margin:12px 0 18px}
+.gala h2 em{color:var(--gold);font-weight:500}
+.gala p{opacity:.8}
+.gala-meta{display:flex;gap:30px;margin-top:30px}
+.gala-meta b{display:block;font-family:var(--serif);font-size:34px;color:var(--gold)}
+.gala-meta span{font-size:13px;opacity:.7}
+.prog{list-style:none;counter-reset:p}
+.prog li{counter-increment:p;display:grid;grid-template-columns:54px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid rgba(201,163,90,.2)}
+.prog li::before{content:counter(p,decimal-leading-zero);font-family:var(--serif);font-size:26px;color:var(--gold);font-style:italic}
+.prog li b{display:block;font-weight:600;color:#fff}
+.prog li span{font-size:14px;opacity:.7}
+
+/* PACK */
+.pack{padding:110px 0;background:var(--paper)}
+.pack .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:70px;align-items:center}
+.pack-img{border-radius:20px;overflow:hidden;aspect-ratio:4/5;position:relative}
+.pack-img img{width:100%;height:100%;object-fit:cover}
+.pack-img .temp{position:absolute;left:20px;bottom:20px;background:rgba(255,255,255,.92);border-radius:14px;padding:14px 18px;font-size:13px;color:var(--muted)}
+.pack-img .temp b{display:block;font-family:var(--serif);font-size:30px;color:var(--ink)}
+.items{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.item{display:flex;gap:14px;align-items:center;background:var(--snow);border-radius:14px;padding:16px}
+.item .ic{width:42px;height:42px;border-radius:12px;background:#e3edf5;display:grid;place-items:center;flex:0 0 42px;color:#2b5b80}
+.item b{font-size:15px}
+.passport{margin-top:22px;display:flex;gap:14px;align-items:center;background:var(--red);color:#fff;border-radius:14px;padding:18px 20px}
+.passport b{display:block}
+.passport span{font-size:14px;opacity:.9}
+
+/* SERVICES */
+.svc{padding:110px 0;background:var(--snow)}
+.svc-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:50px;flex-wrap:wrap}
+.svc-head p{max-width:440px;color:var(--muted)}
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.sgrid div{background:var(--paper);padding:28px 26px;display:flex;gap:16px}
+.sgrid .n{font-family:var(--serif);color:var(--red);font-size:20px;font-weight:700;flex:0 0 28px}
+.sgrid p{font-size:15px}
+.fine{margin-top:22px;font-size:14px;color:var(--muted);font-style:italic}
+
+/* REGISTER */
+.reg{position:relative;padding:120px 0;color:#fff;overflow:hidden}
+.reg-bg{position:absolute;inset:0;background:url(img/dianchi1.jpg) center/cover}
+.reg::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(14,27,43,.94) 30%,rgba(14,27,43,.55))}
+.reg .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.reg .eyebrow{color:var(--gold)}
+.reg h2{margin:12px 0 16px}
+.reg p{opacity:.85}
+form{background:var(--paper);color:var(--ink);border-radius:22px;padding:34px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+form h3{font-size:24px;margin-bottom:20px}
+.fields[hidden]{display:none}
+.f{margin-bottom:14px}
+.f label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--muted)}
+.f input,.f select,.f textarea{width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:12px;font-family:var(--sans);font-size:15px;background:#fff;color:var(--ink)}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--red)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+form .btn{width:100%;justify-content:center;margin-top:6px}
+.ok{text-align:center;padding:30px 0}
+.ok b{font-family:var(--serif);font-size:26px;display:block;margin:12px 0 6px}
+
+/* FOOTER */
+footer{background:var(--ink);color:rgba(255,255,255,.75);padding:70px 0 40px;font-size:14px}
+footer .top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.12)}
+footer .big{font-family:var(--serif);font-size:clamp(26px,3.2vw,38px);color:#fff;max-width:16ch;line-height:1.2}
+footer .big em{color:var(--gold)}
+.credits{margin-top:30px;font-size:12px;opacity:.6;line-height:1.8}
+
+.reveal{transition:transform .9s}
+.js .reveal:not(.in){transform:translateY(18px)}
+
+@media (max-width:960px){
+  .nav ul{display:none}
+  .pillars-head,.gala .wrap,.pack .wrap,.reg .wrap{grid-template-columns:1fr;gap:40px}
+  .pgrid{grid-template-columns:1fr 1fr}
+  .day,.day.flip{grid-template-columns:1fr;gap:30px}
+  .day.flip .media{order:0}
+  .media{position:static}
+  .sgrid{grid-template-columns:1fr 1fr}
+  .track{grid-template-columns:1fr;gap:18px}
+  .track::before{top:10px;bottom:10px;left:21px;right:auto;border-top:0;border-left:2px dashed rgba(201,163,90,.5)}
+  .stop{display:grid;grid-template-columns:44px 1fr;gap:16px;text-align:left;align-items:center;padding:0}
+  .stop .dot{margin:0}
+}
+@media (max-width:600px){
+  .wrap{padding:0 16px}
+  .brand small{display:none}
+  .facts{grid-template-columns:1fr 1fr}
+  .pgrid,.sgrid,.items,.row2{grid-template-columns:1fr}
+  .pcard{aspect-ratio:4/3}
+  .dnum{font-size:64px}
+  form{padding:24px}
+  .hero .wrap{padding-bottom:40px;padding-top:110px}
+  .nav .btn{padding:9px 16px;font-size:13px}
+  .hero-cta .btn{flex:1 1 100%;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand">MAKXIM <small>Du lịch Trường Xuân</small></a>
+    <ul>
+      <li><a href="#lich-trinh">Lịch trình</a></li>
+      <li><a href="#gala">Gala Dinner</a></li>
+      <li><a href="#chuan-bi">Chuẩn bị</a></li>
+      <li><a href="#dich-vu">Dịch vụ</a></li>
+    </ul>
+    <a href="#dang-ky" class="btn btn-red">Đăng ký tham gia</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-bg" role="img" aria-label="Núi Tuyết Kiệu Tử phủ tuyết dưới bầu trời xanh"></div>
+  <canvas class="snow" id="snow"></canvas>
+  <div class="wrap">
+    <div class="eyebrow">Hành trình Vân Nam · Trung Quốc · Tháng 2, 3/2027</div>
+    <h1>Khám phá Côn Minh <em>chạm tay vào tuyết</em> Kiệu Tử</h1>
+    <p class="lead">Khám phá thành phố mùa xuân – Chiêm ngưỡng núi tuyết hùng vĩ – Trải nghiệm văn hóa Vân Nam – Gắn kết cùng Gala Dinner.</p>
+    <div class="hero-cta">
+      <a href="#lich-trinh" class="btn btn-red">Xem lịch trình
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+      <a href="#dang-ky" class="btn btn-ghost">Đăng ký tham gia</a>
+    </div>
+    <div class="facts">
+      <div><b>5N4Đ</b><span>Thời gian hành trình</span></div>
+      <div><b>4★</b><span>Khách sạn tại Côn Minh</span></div>
+      <div><b>Tàu cao tốc</b><span>Hà Khẩu ⇄ Côn Minh</span></div>
+      <div><b>Gala Dinner</b><span>Đêm kết nối toàn đoàn</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- PILLARS -->
+<section class="pillars">
+  <div class="wrap">
+    <div class="pillars-head reveal">
+      <div>
+        <div class="eyebrow">Thông điệp hành trình</div>
+        <h2 style="margin-top:12px">Bốn trải nghiệm, một mùa xuân Vân Nam</h2>
+      </div>
+      <p>Từ những ngôi đền linh thiêng ở Lào Cai, đoàn vượt cửa khẩu Hà Khẩu, lên tàu cao tốc đến Côn Minh – thành phố khí hậu ôn hòa quanh năm – rồi chinh phục núi tuyết, dạo hồ Điền Trì và khép lại bằng đêm Gala ấm áp.</p>
+    </div>
+    <div class="pgrid">
+      <div class="pcard reveal"><img src="img/greenlake2.jpg" alt="Công viên Thuý Hồ, Côn Minh" loading="lazy"><div class="in"><i>01</i><h3>Thành phố mùa xuân</h3><p>Dạo Thuý Hồ, cảm nhận nhịp sống trung tâm Côn Minh.</p></div></div>
+      <div class="pcard reveal"><img src="img/jiaozi4.jpg" alt="Dãy núi tuyết Kiệu Tử" loading="lazy"><div class="in"><i>02</i><h3>Núi tuyết hùng vĩ</h3><p>Cáp treo lên Kiệu Tử, ngắm tuyết và thác băng tháng 2.</p></div></div>
+      <div class="pcard reveal"><img src="img/gull2.jpg" alt="Hải âu mỏ đỏ trên hồ Điền Trì" loading="lazy"><div class="in"><i>03</i><h3>Văn hóa Vân Nam</h3><p>Hồ Điền Trì, hải âu di cư và ẩm thực địa phương.</p></div></div>
+      <div class="pcard gala reveal"><span class="spark"></span><span class="glass">Gala</span><div class="in"><i>04</i><h3>Gala Dinner</h3><p>Đêm tiệc vinh danh, gắn kết và tỏa sáng cùng tập thể.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROUTE -->
+<section class="route">
+  <div class="wrap">
+    <div class="eyebrow">Tuyến hành trình</div>
+    <h2>Lào Cai → Côn Minh → Lào Cai</h2>
+    <div class="track">
+      <div class="stop"><div class="dot">1</div><div><b>Lào Cai · Hà Khẩu</b><span>Dâng hương · Nhập cảnh</span></div></div>
+      <div class="stop"><div class="dot">2</div><div><b>Côn Minh</b><span>Tàu cao tốc · Thuý Hồ</span></div></div>
+      <div class="stop hi"><div class="dot">3</div><div><b>Núi Tuyết Kiệu Tử</b><span>Cáp treo · Băng tuyết</span></div></div>
+      <div class="stop"><div class="dot">4</div><div><b>Hồ Điền Trì</b><span>Hải Canh · Gala Dinner</span></div></div>
+      <div class="stop"><div class="dot">5</div><div><b>Hà Khẩu · Việt Nam</b><span>Hẹn ngày gặp lại</span></div></div>
+    </div>
+    <div class="legend">
+      <span>Xe du lịch theo quy mô đoàn</span>
+      <span>Tàu cao tốc Hà Khẩu / Kiến Thuỷ ⇄ Côn Minh</span>
+      <span>Cáp treo Kiệu Tử</span>
+    </div>
+  </div>
+</section>
+
+<!-- ITINERARY -->
+<section class="itin" id="lich-trinh">
+  <div class="wrap itin-head reveal">
+    <div class="eyebrow">Lịch trình chi tiết</div>
+    <h2 style="margin-top:12px">5 ngày, từng khoảnh khắc</h2>
+    <p>Chương trình dự kiến – giờ tàu, khoảng cách và điểm tham quan sẽ được xác nhận theo dịch vụ thực tế trước khi chốt.</p>
+  </div>
+
+  <div class="daynav" id="daynav">
+    <div class="wrap">
+      <a href="#ngay-1" class="on">Ngày 1 · Lào Cai</a>
+      <a href="#ngay-2">Ngày 2 · Côn Minh</a>
+      <a href="#ngay-3">Ngày 3 · Kiệu Tử</a>
+      <a href="#ngay-4">Ngày 4 · Điền Trì & Gala</a>
+      <a href="#ngay-5">Ngày 5 · Về Việt Nam</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <!-- DAY 1 -->
+    <article class="day" id="ngay-1">
+      <figure class="media reveal">
+        <div class="main"><img src="img/baoha.jpg" alt="Cổng Đền Bảo Hà, Lào Cai" loading="lazy"></div>
+        <div class="sub"><img src="img/hekou.jpg" alt="Cửa khẩu quốc tế Lào Cai – Hà Khẩu" loading="lazy"><img src="img/jianshui.jpg" alt="Lầu Triều Dương, Kiến Thuỷ" loading="lazy"></div>
+        <figcaption>Đền Bảo Hà · Cửa khẩu Lào Cai – Hà Khẩu · Lầu Triều Dương, Kiến Thuỷ</figcaption>
+      </figure>
+      <div class="reveal">
+        <div class="dnum">01</div>
+        <h3>Các tỉnh – Lào Cai – Nhập cảnh Hà Khẩu / Kiến Thuỷ</h3>
+        <div class="tag">Dâng hương các đền – Nhập cảnh Trung Quốc</div>
+        <div class="slots">
+          <div class="slot"><h4>Buổi sáng</h4>
+            <p>Các đoàn khởi hành từ địa phương theo kế hoạch điều hành riêng, xe đưa đoàn đến Lào Cai. Tham quan các điểm tâm linh:</p>
+            <ul>
+              <li><b>Đền Bảo Hà</b> – điểm đến tâm linh nổi tiếng của vùng đất Lào Cai.</li>
+              <li><b>Đền Mẫu 12 Con Giáp</b> – tìm hiểu không gian tín ngưỡng.</li>
+              <li><b>Đền Mẫu Thượng</b> – dâng hương, cầu bình an và may mắn cho chuyến đi.</li>
+            </ul>
+          </div>
+          <div class="slot"><h4>Trưa & chiều</h4>
+            <p>Dùng bữa trưa, di chuyển đến cửa khẩu Lào Cai, làm thủ tục xuất cảnh Việt Nam – nhập cảnh Trung Quốc tại Hà Khẩu. Tùy giờ nhập cảnh, đoàn chọn một trong hai phương án nghỉ đêm:</p>
+          </div>
+          <div class="opts">
+            <div class="opt-tabs" role="tablist">
+              <button class="on" data-opt="a" role="tab">Phương án A · Hà Khẩu</button>
+              <button data-opt="b" role="tab">Phương án B · Kiến Thuỷ</button>
+            </div>
+            <div class="opt on" data-opt="a">
+              <ul>
+                <li>Về khách sạn nhận phòng, dùng bữa tối và nghỉ đêm tại Hà Khẩu.</li>
+                <li>Sáng ngày 2 ra ga đi tàu cao tốc lúc <b>08:00</b> – khách sạn cách ga khoảng 3–4 km.</li>
+              </ul>
+              <div class="plus">✓ Hạn chế di chuyển đường dài sau nhập cảnh, phù hợp nếu đoàn đến cửa khẩu muộn hoặc cần ưu tiên nghỉ ngơi.</div>
+            </div>
+            <div class="opt" data-opt="b">
+              <ul>
+                <li>Đi ô tô từ Hà Khẩu đến Kiến Thuỷ (khoảng 2,5–3 giờ), nhận phòng, ăn tối, nghỉ đêm.</li>
+                <li>Sáng ngày 2 ra ga (cách khoảng 6–7 km) đi tàu lúc <b>09:30</b>.</li>
+              </ul>
+              <div class="plus">✓ Thêm trải nghiệm lưu trú tại Kiến Thuỷ, giờ tàu sáng hôm sau thuận tiện hơn nếu giờ nhập cảnh cho phép.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- DAY 2 -->
+    <article class="day flip" id="ngay-2">
+      <figure class="media reveal">
+        <div class="main"><img src="img/greenlake1.jpg" alt="Thuyền trên hồ Công viên Thuý Hồ" loading="lazy"></div>
+        <div class="sub"><img src="img/train.jpg" alt="Tàu cao tốc Trung Quốc" loading="lazy"><img src="img/greenlake2.jpg" alt="Toàn cảnh hồ Thuý Hồ" loading="lazy"></div>
+        <figcaption>Công viên Thuý Hồ (Green Lake Park) · Tàu cao tốc</figcaption>
+      </figure>
+      <div class="reveal">
+        <div class="dnum">02</div>
+        <h3>Hà Khẩu / Kiến Thuỷ – Côn Minh</h3>
+        <div class="tag">Khám phá thành phố mùa xuân</div>
+        <div class="slots">
+          <div class="slot"><h4>Buổi sáng</h4><p>Ăn sáng, trả phòng, ra ga đi tàu cao tốc: <b>08:00</b> từ Hà Khẩu (PA A) hoặc <b>09:30</b> từ Kiến Thuỷ (PA B). Hướng về Côn Minh – thành phố khí hậu dễ chịu, cảnh quan hồ núi và văn hóa đa dạng của Vân Nam.</p></div>
+          <div class="slot"><h4>Buổi trưa</h4><p>Xe riêng đón đoàn đi ăn trưa, sau đó về khách sạn 4 sao nhận phòng hoặc gửi hành lý.</p></div>
+          <div class="slot"><h4>Buổi chiều</h4><p>Tham quan <b>Công viên Thuý Hồ</b> – không gian xanh giữa trung tâm Côn Minh với mặt hồ yên bình, hàng cây, đình đài. Mùa đông có thể ngắm hải âu mỏ đỏ di cư. Tiếp tục dạo khu trung tâm theo thời gian cho phép.</p></div>
+          <div class="slot"><h4>Buổi tối</h4><p>Ăn tối tại nhà hàng, về khách sạn nghỉ ngơi, chuẩn bị cho ngày núi tuyết.</p></div>
+        </div>
+        <span class="stay">Nghỉ đêm: Khách sạn 4★ Côn Minh</span>
+      </div>
+    </article>
+
+    <!-- DAY 3 -->
+    <article class="day" id="ngay-3">
+      <figure class="media reveal">
+        <div class="main"><img src="img/jiaozi2.jpg" alt="Đỉnh chính Núi Tuyết Kiệu Tử" loading="lazy"></div>
+        <div class="sub"><img src="img/jiaozi1.jpg" alt="Tuyết phủ trên Kiệu Tử Sơn" loading="lazy"><img src="img/jiaozi5.jpg" alt="Đỉnh núi tuyết Kiệu Tử nhìn từ trên cao" loading="lazy"></div>
+        <figcaption>Núi Tuyết Kiệu Tử (Jiaozi Snow Mountain)</figcaption>
+      </figure>
+      <div class="reveal">
+        <div class="dnum">03</div>
+        <h3>Côn Minh – Núi Tuyết Kiệu Tử</h3>
+        <div class="tag">Chạm tay vào tuyết trắng Vân Nam</div>
+        <div class="slots">
+          <div class="slot"><h4>Buổi sáng</h4><p>Ăn sáng sớm, khởi hành đến khu du lịch Núi Tuyết Kiệu Tử qua những cung đường núi uốn lượn của cao nguyên Vân Nam. Làm thủ tục, đi xe trung chuyển và cáp treo theo điều kiện vận hành thực tế.</p></div>
+          <div class="slot"><h4>Buổi trưa</h4><p>Dùng bữa trưa theo phương án nhà hàng phù hợp lịch trình tại khu du lịch.</p></div>
+          <div class="slot"><h4>Buổi chiều</h4><p>Khám phá <b>Kiệu Tử Sơn</b> – núi cao, hồ núi, đồng cỏ và cảnh quan băng tuyết theo mùa. Tháng 2 có cơ hội ngắm tuyết và thác đóng băng. Chụp ảnh, sau đó tập trung, kiểm đếm quân số và về Côn Minh.</p></div>
+          <div class="slot"><h4>Buổi tối</h4><p>Ăn tối, nghỉ ngơi tại khách sạn.</p></div>
+        </div>
+        <div class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+          <div><b>Ngày vận động nhiều nhất.</b> Mang áo khoác giữ nhiệt, găng tay, mũ, giày chống trượt, thuốc cá nhân. Khách không đủ điều kiện sức khỏe hoặc khi thời tiết xấu không bắt buộc lên khu vực cao.</div></div>
+        <span class="stay" style="margin-top:16px">Nghỉ đêm: Khách sạn 4★ Côn Minh</span>
+      </div>
+    </article>
+
+    <!-- DAY 4 -->
+    <article class="day flip" id="ngay-4">
+      <figure class="media reveal">
+        <div class="main"><img src="img/dianchi1.jpg" alt="Hồ Điền Trì nhìn về núi Tây Sơn" loading="lazy"></div>
+        <div class="sub"><img src="img/gull2.jpg" alt="Hải âu mỏ đỏ ở Côn Minh" loading="lazy"><img src="img/dianchi2.jpg" alt="Toàn cảnh hồ Điền Trì" loading="lazy"></div>
+        <figcaption>Hồ Điền Trì & Công viên Hải Canh · Hải âu mỏ đỏ</figcaption>
+      </figure>
+      <div class="reveal">
+        <div class="dnum">04</div>
+        <h3>Côn Minh – Hồ Điền Trì – Gala Dinner</h3>
+        <div class="tag">Cảnh sắc mùa đông – Kết nối và tỏa sáng</div>
+        <div class="slots">
+          <div class="slot"><h4>Buổi sáng</h4><p>Tham quan <b>Hồ Điền Trì</b> và <b>Công viên Hải Canh</b> – mặt hồ rộng lớn, núi Tây Sơn làm nền, không gian ven hồ thoáng đãng. Mùa đông là nơi quan sát hải âu mỏ đỏ di cư; đoàn dạo bộ, chụp ảnh.</p></div>
+          <div class="slot"><h4>Buổi trưa</h4><p>Thưởng thức ẩm thực Vân Nam tại nhà hàng địa phương với thực đơn thống nhất trước.</p></div>
+          <div class="slot"><h4>Buổi chiều</h4><p>Về khách sạn nghỉ ngơi, chuẩn bị trang phục cho Gala – bố trí đủ thời gian cho đoàn 170–200 khách thay đồ, chụp ảnh, tập trung đúng giờ.</p></div>
+          <div class="slot"><h4>Buổi tối</h4><p><b>GALA DINNER – HÀNH TRÌNH KẾT NỐI.</b> <a href="#gala" style="color:var(--red);font-weight:600">Xem chương trình ↓</a></p></div>
+        </div>
+        <span class="stay">Nghỉ đêm: Khách sạn 4★ Côn Minh</span>
+      </div>
+    </article>
+
+    <!-- DAY 5 -->
+    <article class="day" id="ngay-5">
+      <figure class="media reveal">
+        <div class="main"><img src="img/hekou.jpg" alt="Cửa khẩu quốc tế Lào Cai" loading="lazy"></div>
+        <figcaption>Cửa khẩu quốc tế Lào Cai – Hà Khẩu</figcaption>
+      </figure>
+      <div class="reveal">
+        <div class="dnum">05</div>
+        <h3>Côn Minh – Hà Khẩu – Việt Nam</h3>
+        <div class="tag">Kết thúc hành trình – Hẹn ngày gặp lại</div>
+        <div class="slots">
+          <div class="slot"><h4>Buổi sáng</h4><p>Ăn sáng, trả phòng. Xe đưa đoàn ra ga, lên tàu cao tốc về Hà Khẩu theo giờ đã xác nhận.</p></div>
+          <div class="slot"><h4>Trưa & chiều</h4><p>Làm thủ tục xuất cảnh Trung Quốc – nhập cảnh Việt Nam. Xe đón đoàn trở về điểm đón ban đầu.</p></div>
+        </div>
+        <p style="margin-top:8px;font-family:var(--serif);font-style:italic;font-size:19px;color:var(--ink-2)">“Kính chúc Quý khách sức khỏe, thành công và hẹn gặp lại trong những hành trình tiếp theo.”</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- GALA -->
+<section class="gala" id="gala">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Tối ngày 4 · Côn Minh</div>
+      <h2>Gala Dinner<br><em>Hành trình kết nối</em></h2>
+      <p>Không gian tiệc chỉn chu, bố trí bàn ghế khoa học, âm thanh – ánh sáng phù hợp, MC chuyên nghiệp và phương án dự phòng cho mọi tình huống. Sân khấu, màn hình LED, tiết mục biểu diễn và quà tặng được thống nhất theo ngân sách và mục tiêu của đoàn.</p>
+      <div class="gala-meta">
+        <div><b>170–200</b><span>khách tham dự</span></div>
+        <div><b>6</b><span>phần chương trình</span></div>
+      </div>
+    </div>
+    <ol class="prog reveal">
+      <li><div><b>Đón khách & check-in</b><span>Chụp ảnh tại khu vực check-in</span></div></li>
+      <li><div><b>Khai mạc</b><span>Giới thiệu đại biểu, phát biểu chào mừng</span></div></li>
+      <li><div><b>Tiệc tối</b><span>Thực đơn được thống nhất trước</span></div></li>
+      <li><div><b>Văn nghệ & giao lưu</b><span>Các hoạt động gắn kết tập thể</span></div></li>
+      <li><div><b>Vinh danh & trao quà</b><span>Nội dung riêng theo yêu cầu của đoàn</span></div></li>
+      <li><div><b>Ảnh tập thể</b><span>Khép lại hành trình trang trọng, ấm áp</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- PACK -->
+<section class="pack" id="chuan-bi">
+  <div class="wrap">
+    <div class="pack-img reveal">
+      <img src="img/jiaozi1.jpg" alt="Tuyết trên Núi Kiệu Tử" loading="lazy">
+      <div class="temp">Kiệu Tử tháng 2<b>Băng tuyết</b>tùy thời tiết & lượng tuyết</div>
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">Chuẩn bị hành lý</div>
+      <h2 style="margin-top:12px">Sẵn sàng cho núi tuyết</h2>
+      <p style="color:var(--muted);margin-top:14px">Côn Minh ôn hòa nhưng khu vực núi cao Kiệu Tử rất lạnh. Hãy chuẩn bị:</p>
+      <div class="items">
+        <div class="item"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3 4 6v15h5V11m7-8 4 3v15h-5V11M8 3c0 2 2 3 4 3s4-1 4-3"/></svg></div><b>Áo khoác giữ nhiệt</b></div>
+        <div class="item"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11V5a2 2 0 0 1 4 0v5m0-1V4a2 2 0 0 1 4 0v6m0-3a2 2 0 0 1 4 0v7a7 7 0 0 1-7 7h-1a7 7 0 0 1-6-3l-2-4a2 2 0 0 1 3-2l1 1"/></svg></div><b>Găng tay & mũ len</b></div>
+        <div class="item"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 16h16v3H4zM4 16V6l6 2 4 4 6 1v3"/></svg></div><b>Giày chống trượt</b></div>
+        <div class="item"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5h6v2M12 11v5M9.5 13.5h5"/></svg></div><b>Thuốc cá nhân</b></div>
+      </div>
+      <div class="passport">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 17h6"/></svg>
+        <div><b>Thủ tục bắt buộc: Hộ chiếu còn thời hạn</b><span>Tất cả khách tham gia phải sử dụng hộ chiếu còn hạn sử dụng.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="svc" id="dich-vu">
+  <div class="wrap">
+    <div class="svc-head reveal">
+      <div><div class="eyebrow">Dịch vụ dự kiến</div><h2 style="margin-top:12px">Trọn gói, chu đáo</h2></div>
+      <p>Đội ngũ hướng dẫn viên, trưởng đoàn và nhân sự điều hành đồng hành suốt hành trình.</p>
+    </div>
+    <div class="sgrid reveal">
+      <div><span class="n">01</span><p>Khách sạn tiêu chuẩn <b>4 sao</b> tại Côn Minh theo chương trình</p></div>
+      <div><span class="n">02</span><p>Khách sạn Hà Khẩu hoặc Kiến Thuỷ theo phương án lựa chọn</p></div>
+      <div><span class="n">03</span><p>Vé <b>tàu cao tốc</b> theo hành trình và tình trạng vé</p></div>
+      <div><span class="n">04</span><p>Xe du lịch phù hợp quy mô đoàn</p></div>
+      <div><span class="n">05</span><p>Các bữa ăn theo chương trình, thực đơn thống nhất trước</p></div>
+      <div><span class="n">06</span><p>Vé tham quan các điểm theo chương trình</p></div>
+      <div><span class="n">07</span><p>Hướng dẫn viên, trưởng đoàn, nhân sự điều hành</p></div>
+      <div><span class="n">08</span><p>Chương trình <b>Gala Dinner</b> theo quy mô & ngân sách</p></div>
+      <div><span class="n">09</span><p>Bảo hiểm du lịch theo quy định áp dụng</p></div>
+    </div>
+    <p class="fine">Chi tiết dịch vụ bao gồm / không bao gồm, tiêu chuẩn phòng, phụ thu phòng đơn và điều kiện thanh toán được thể hiện trong báo giá và hợp đồng chính thức.</p>
+  </div>
+</section>
+
+<!-- REGISTER -->
+<section class="reg" id="dang-ky">
+  <div class="reg-bg"></div>
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Đăng ký tham gia</div>
+      <h2>Cùng nhau chạm tay vào tuyết Kiệu Tử</h2>
+      <p>Để lại thông tin để ban tổ chức xếp đoàn, đặt phòng và hỗ trợ thủ tục hộ chiếu. Khởi hành dự kiến tháng 2, 3/2027.</p>
+    </div>
+    <form id="form" class="reveal" novalidate>
+      <div class="fields">
+        <h3>Thông tin đăng ký</h3>
+        <div class="f"><label for="ten">Họ và tên *</label><input id="ten" name="ten" required autocomplete="name"></div>
+        <div class="row2">
+          <div class="f"><label for="sdt">Số điện thoại *</label><input id="sdt" name="sdt" type="tel" required inputmode="tel" autocomplete="tel"></div>
+          <div class="f"><label for="donvi">Đơn vị / Phòng ban</label><input id="donvi" name="donvi"></div>
+        </div>
+        <div class="row2">
+          <div class="f"><label for="songuoi">Số người đi kèm</label><select id="songuoi" name="songuoi"><option>Chỉ mình tôi</option><option>+1 người</option><option>+2 người</option><option>+3 người trở lên</option></select></div>
+          <div class="f"><label for="hochieu">Hộ chiếu</label><select id="hochieu" name="hochieu"><option>Đã có, còn hạn</option><option>Sắp hết hạn</option><option>Chưa có</option></select></div>
+        </div>
+        <div class="f"><label for="ghichu">Ghi chú (phòng đơn, ăn chay, sức khỏe…)</label><textarea id="ghichu" name="ghichu" rows="3"></textarea></div>
+        <button class="btn btn-red" type="submit">Gửi đăng ký</button>
+      </div>
+      <div class="ok" id="ok" hidden>
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#b3302a" stroke-width="2" style="margin:0 auto"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>
+        <b>Đã nhận đăng ký!</b>
+        <p style="color:var(--muted)">Ban tổ chức sẽ liên hệ xác nhận với bạn sớm.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div class="big">Du lịch Trường Xuân <em>vinh dự đồng hành</em></div>
+      <div>
+        <div style="color:#fff;font-weight:700;letter-spacing:.18em">MAKXIM</div>
+        <div style="margin-top:6px">Côn Minh – Núi Tuyết Kiệu Tử · 5 ngày 4 đêm<br>Khởi hành dự kiến tháng 2, 3/2027</div>
+      </div>
+    </div>
+    <div class="credits">
+      Ảnh: Wikimedia Commons — Zhangmoon618, Timsong311, 維基小霸王 (Núi Kiệu Tử, CC BY-SA); xiquinhosilva (CC BY 2.0), N509FZ (Thuý Hồ, tàu cao tốc, CC BY-SA 4.0); Ngguls (Điền Trì, CC BY-SA 4.0); Charrine Liu (hải âu, CC BY-SA 3.0); Vmenkov (Đền Bảo Hà, CC BY-SA 3.0); Yumeto (Hà Khẩu, Kiến Thuỷ, CC BY-SA 4.0).
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+// Nav nền đặc khi cuộn
+const nav=document.getElementById('nav');
+const onScroll=()=>nav.classList.toggle('solid',scrollY>60);
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+// Hiện dần khi cuộn tới
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// Đánh dấu ngày đang xem
+const links=[...document.querySelectorAll('#daynav a')];
+const dio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('.day').forEach(d=>dio.observe(d));
+
+// Phương án A/B ngày 1
+document.querySelectorAll('.opt-tabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.opt-tabs button,.opt').forEach(x=>x.classList.toggle('on',x.dataset.opt===b.dataset.opt));
+});
+
+// Form: chưa nối backend — kiểm tra rồi hiện thông báo
+document.getElementById('form').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f=e.target,ten=f.ten,sdt=f.sdt;
+  let bad=false;
+  [ten,sdt].forEach(i=>{const v=i.value.trim();const ok=i===sdt?/^[0-9 +.]{9,13}$/.test(v):v.length>1;i.style.borderColor=ok?'':'#b3302a';if(!ok)bad=true});
+  if(bad)return;
+  f.querySelector('.fields').hidden=true;
+  document.getElementById('ok').hidden=false;
+});
+
+// Tuyết rơi trên hero
+(()=>{
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  const c=document.getElementById('snow'),x=c.getContext('2d');let W,H,f=[];
+  const size=()=>{W=c.width=c.offsetWidth;H=c.height=c.offsetHeight};size();addEventListener('resize',size);
+  for(let i=0;i<90;i++)f.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*2.4+.6,s:Math.random()*.6+.3,d:Math.random()*Math.PI*2});
+  (function loop(){
+    x.clearRect(0,0,W,H);x.fillStyle='rgba(255,255,255,.85)';x.beginPath();
+    for(const p of f){p.y+=p.s;p.d+=.01;p.x+=Math.sin(p.d)*.4;if(p.y>H){p.y=-5;p.x=Math.random()*W}x.moveTo(p.x,p.y);x.arc(p.x,p.y,p.r,0,Math.PI*2)}
+    x.fill();requestAnimationFrame(loop);
+  })();
+})();
+</script>
+</body>
+</html>
