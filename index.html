@@ -232,6 +232,14 @@ footer .big em{color:var(--gold)}
   .hero-cta .btn{flex:1 1 100%;justify-content:center}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+.vid{padding:90px 0;background:var(--snow)}
+.vid-head{text-align:center;max-width:680px;margin:0 auto 36px}
+.vid-head h2{margin-top:12px}
+.vid-box{position:relative;aspect-ratio:16/9;max-width:960px;margin:0 auto;border-radius:20px;overflow:hidden;background:#000;box-shadow:0 30px 60px -25px rgba(14,27,43,.5)}
+.vid-box iframe,.vid-box button{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid-box button{cursor:pointer;padding:0;background:#000 center/cover no-repeat}
+.vid-box button::after{content:"";position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:var(--red) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M9 6.5v11l9-5.5z'/%3E%3C/svg%3E") center/48px no-repeat;box-shadow:0 0 0 10px rgba(179,48,42,.25);transition:.25s}
+.vid-box button:hover::after{transform:scale(1.08)}
 </style>
 </head>
 <body>
@@ -286,6 +294,19 @@ footer .big em{color:var(--gold)}
       <div class="pcard reveal"><img src="img/khach-tuyet1.jpg" alt="Du khách trên Núi Tuyết Kiệu Tử" loading="lazy"><div class="in"><i>02</i><h3>Núi tuyết hùng vĩ</h3><p>Cáp treo lên Kiệu Tử, ngắm tuyết và thác băng tháng 2.</p></div></div>
       <div class="pcard reveal"><img src="img/khach-haiau1.jpg" alt="Du khách cho hải âu ăn bên hồ Điền Trì" loading="lazy"><div class="in"><i>03</i><h3>Văn hóa Vân Nam</h3><p>Hồ Điền Trì, hải âu di cư và ẩm thực địa phương.</p></div></div>
       <div class="pcard gala reveal"><span class="spark"></span><span class="glass">Gala</span><div class="in"><i>04</i><h3>Gala Dinner</h3><p>Đêm tiệc vinh danh, gắn kết và tỏa sáng cùng tập thể.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="vid" id="video">
+  <div class="wrap">
+    <div class="vid-head reveal">
+      <div class="eyebrow">Video hành trình</div>
+      <h2>Xem trước mùa xuân Vân Nam</h2>
+    </div>
+    <div class="vid-box reveal">
+      <button type="button" aria-label="Phát video hành trình Côn Minh" style="background-image:url(https://i.ytimg.com/vi/vhCLpcznZPo/hqdefault.jpg)" onclick="this.outerHTML='<iframe src=&quot;https://www.youtube.com/embed/vhCLpcznZPo?autoplay=1&amp;rel=0&quot; title=&quot;Video hành trình Côn Minh&quot; allow=&quot;autoplay; encrypted-media; picture-in-picture; fullscreen&quot; allowfullscreen></iframe>'"></button>
     </div>
   </div>
 </section>
